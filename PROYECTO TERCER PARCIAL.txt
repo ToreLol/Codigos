@@ -1,0 +1,28 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int n;  //En n se almacenara el grado del polinomio
+
+    cout << "Cual es el grado del polinomio: "; //Se pide al ususario que introduzca el grado del polinomio
+    cin >> n;
+
+    float* P;   //Declaramos el arreglo que contendra los coefientes del polinomio como puntero.
+    P = new float[n+1];   //Se redimensiona el arreglo al tamaño requerido
+
+    for (int i = 1; i <= n; i++)
+    {
+        cout << "Dame el coeficiente " << i << ": ";
+        cin >> P[i];
+    }//Ciclo para introducir los coeficientees del polinomio
+
+    cout << "La integral indefinida del polinomio es: " << endl;
+    for(int i = 1; i<=n; i++)
+    {
+        cout << " + " << P[i]/i+1<< "x^" << i+1;  //Se divide el coeficiente P[i], entre el exponente i+1, también se agrega +1 al esponente
+    }//Cliclo para imprimir el polinomio
+    cout << " + C";  //Se agrega + C para demostrar que la integral indefinida funciona para toda constante de la operación
+    return 0;
+}

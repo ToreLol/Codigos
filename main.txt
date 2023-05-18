@@ -1,0 +1,12 @@
+#include <iostream>
+#include <string.h>
+#include "file.h"
+using namespace std;
+
+int main()
+{
+    int fondos[3]={0,0,0};
+    code();
+    
+   return 0;
+}

@@ -1,0 +1,46 @@
+#include<stdio.h>
+using namespace std;
+
+int main()
+{
+    int op = 0;
+    int num1 = 0;
+    int num2 = 0;
+    printf("1:suma, 2:resta, 3:multiplicacion, 4:division\n");
+    printf("elige del 1 al 4\n");
+    scanf_s("%i", &op);
+    switch (op)
+    {
+    case 1:printf("elegiste 1\n"); 
+        printf("elige un numero\n");
+        scanf_s("%d", &num1);
+        printf("elige otro numero\n");
+        scanf_s("%d", &num2);
+        printf("%d", num1 + num2);
+            break;
+    case 2:printf("elegite 2");
+        printf("elige un numero\n");
+        scanf_s("%d", &num1);
+        printf("elige otro numero\n");
+        scanf_s("%d", &num2);
+        printf("%d", num1 - num2);
+        break;
+    case 3:printf("elegiste 3");
+        printf("elige un numero\n");
+        scanf_s("%d", &num1);
+        printf("elige otro numero\n");
+        scanf_s("%d", &num2);
+        printf("%d", num1 * num2);
+        break;
+    case 4:printf("elegiste 4"); 
+        printf("elige un numero\n");
+        scanf_s("%d", &num1);
+        printf("elige otro numero\n");
+        scanf_s("%d", &num2);
+        printf("%d", num1 / num2);
+
+    default: printf("no esta disponible");
+        return 0;
+    }
+
+}
